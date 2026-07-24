@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 import { MenuRounded } from "@mui/icons-material";
 import Button from "./Button";
 import Divider from "./Divider";
+import logo from "../assets/images/logo.png";
+
 
 const Mobileicon = styled.div`
   display: none;
@@ -47,12 +49,12 @@ const NavBar = () => {
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full h-24 px-6 lg:px-8 flex items-center justify-between md:justify-center backdrop-blur-md bg-[#050816]/80 border-b border-white/10">
-      <div className="md:absolute md:left-8">
+      <div className="md:absolute md:left-0">
         <NavLink to="/">
           <img
-            src="https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/MainAssets/Bright_Canvas_logo.webp"
-            alt=""
-            className="h-10 lg:h-14 "
+            src={logo}
+            alt="image is not loading"
+            className="h-20 lg:h-40 w-[250px]"
           />
         </NavLink>
       </div>

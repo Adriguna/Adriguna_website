@@ -61,24 +61,25 @@ const ProjectCard = ({ project, index }) => {
 
       {/* Content */}
       <div className="p-8">
-        <p className="text-blue-400 text-sm">
+        <p className="text-blue-400 text-sm" style={{padding: '5px'}}>
           {project.subtitle}
         </p>
 
-        <h3 className="mt-2 text-3xl font-bold text-white">
+        <h3 className="mt-2 text-3xl font-bold text-white" style={{padding: '5px'}}>
           {project.title}
         </h3>
 
-        <p className="mt-5 leading-7 text-slate-400">
+        <p className="mt-5 leading-7 text-slate-400" style={{padding: '5px'}}>
           {project.description}
         </p>
 
         {/* Technologies */}
-        <div className="mt-6 flex flex-wrap gap-3">
+        <div className="mt-6 flex flex-wrap gap-3" style={{padding: '5px'}}>
           {project.technologies.map((tech) => (
             <span
               key={tech}
               className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-300"
+              style={{marginTop: '10px',padding: '5px'}}
             >
               {tech}
             </span>
@@ -91,6 +92,7 @@ const ProjectCard = ({ project, index }) => {
           target="_blank"
           rel="noreferrer"
           className="mt-8 inline-flex items-center gap-2 text-blue-400 font-semibold transition-all duration-300 group-hover:gap-4"
+          style={{padding: '10px'}}
         >
           View Project
 

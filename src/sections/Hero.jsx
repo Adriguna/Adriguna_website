@@ -58,16 +58,9 @@ const Hero = () => {
               transition={{ delay: .2 }}
               className="mt-8 text-5xl font-bold leading-tight text-white md:text-7xl"
             >
-              Building
+              Get Your High Quality App and Website Built by<span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-500 bg-clip-text text-transparent"> Adriguna! </span>
               <br />
 
-              <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-500 bg-clip-text text-transparent">
-                Digital Experiences
-              </span>
-
-              <br />
-
-              For Modern Businesses
             </motion.h1>
 
             {/* Description */}
@@ -78,10 +71,10 @@ const Hero = () => {
               transition={{ delay: .4 }}
               className="mt-8 max-w-xl text-lg leading-8 text-slate-400"
             >
-              We design and develop high-performance websites,
-              mobile applications, AI-powered solutions,
-              scalable software and cloud platforms that help
-              startups and businesses grow faster.
+              This is the era of online world without a website or an app,
+              a bussiness can't reach millons of people across the globe. If a bussiness has its 
+              own website and app, it grows online automatically. Having its own 
+              website and app make your business appear more truasworthy and credible. We at Adriguna, build high quality websites and apps for your business to grow online.
             </motion.p>
 
             {/* Buttons */}
