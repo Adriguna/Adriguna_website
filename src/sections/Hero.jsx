@@ -33,7 +33,7 @@ const Hero = () => {
 
         <Container>
 
-        <div className="relative z-10 grid min-h-[calc(100vh-96px)] items-center gap-20 lg:grid-cols-2">
+        <div className="relative z-10 grid min-h-[calc(100vh-96px)] items-center gap-12 lg:gap-20 lg:grid-cols-2">
 
           {/* LEFT CONTENT */}
 
@@ -56,7 +56,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: .2 }}
-              className="mt-8 text-5xl font-bold leading-tight text-white md:text-7xl"
+              className="mt-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white"
             >
               Get Your High Quality App and Website Built by<span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-500 bg-clip-text text-transparent"> Adriguna! </span>
               <br />
@@ -69,7 +69,7 @@ const Hero = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: .4 }}
-              className="mt-8 max-w-xl text-lg leading-8 text-slate-400"
+              className="mt-6 max-w-xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8"
             >
               This is the era of online world without a website or an app,
               a bussiness can't reach millons of people across the globe. If a bussiness has its 

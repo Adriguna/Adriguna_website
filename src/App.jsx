@@ -1,8 +1,9 @@
+import { Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
-import Hero from "./sections/Hero";
-import Stats from "./sections/Stats";
-import Services from "./sections/Services";
-import Portfolio from "./sections/Portfolio";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -10,12 +11,10 @@ function App() {
       <Navbar />
       <div className="h-24"></div>
 
-      <main>
-        <Hero />
-        <Stats />
-        <Services />
-        <Portfolio />
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </div>
   );
 }
