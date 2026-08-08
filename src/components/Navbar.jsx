@@ -70,7 +70,7 @@ const NavBar = () => {
           <NavLink to="/work">Work</NavLink>
         </li> */}
         <li className="">
-          <NavLink to="/design">Design</NavLink>
+          <NavLink to="/services">Services</NavLink>
         </li>
         <li className="">
           <NavLink to="/tech">Tech</NavLink>
@@ -111,12 +111,12 @@ const NavBar = () => {
         <Divider className="" />
         <li className="">
           <NavLink
-            to="/design"
+            to="/services"
             onClick={() => {
               setisOpen(!isOpen);
             }}
           >
-            Design
+            Services
           </NavLink>
         </li>
         <Divider className="" />
