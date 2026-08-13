@@ -47,14 +47,17 @@ const ContactInfo = () => {
         overflow-hidden
         bg-[#050816]
         px-4
-        py-16
+        py-20
         sm:px-6
-        sm:py-20
+        sm:py-24
         lg:px-8
-        lg:py-24
+        lg:py-28
       "
+      style={{ padding: "10px" }}
     >
-      {/* ================= BACKGROUND GLOW ================= */}
+      {/* =====================================================
+          BACKGROUND GLOW
+      ====================================================== */}
 
       <div
         className="
@@ -72,11 +75,41 @@ const ContactInfo = () => {
         "
       />
 
-      {/* ================= CONTAINER ================= */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          bottom-0
+          right-0
+          h-64
+          w-64
+          rounded-full
+          bg-purple-500/10
+          blur-[140px]
+          sm:h-80
+          sm:w-80
+        "
+      />
 
-      <div className="mx-auto w-full max-w-7xl">
+      {/* =====================================================
+          MAIN CONTAINER
+      ====================================================== */}
 
-        {/* ================= SECTION HEADING ================= */}
+      <div
+        className="
+          relative
+          z-10
+          mx-auto
+          flex
+          w-full
+          max-w-7xl
+          flex-col
+          items-center
+        "
+      >
+        {/* =====================================================
+            SECTION HEADING
+        ====================================================== */}
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -91,10 +124,13 @@ const ContactInfo = () => {
             max-w-3xl
             flex-col
             items-center
+            justify-center
             text-center
             sm:mb-16
           "
         >
+          {/* Badge */}
+
           <span
             className="
               inline-flex
@@ -109,21 +145,30 @@ const ContactInfo = () => {
               text-xs
               font-medium
               text-cyan-300
+              sm:px-5
+              sm:py-2
               sm:text-sm
             "
+            style={{ padding: "10px" }}
           >
             Get In Touch
           </span>
 
+          {/* Heading */}
+
           <h2
             className="
               mt-5
+              w-full
+              text-center
               text-3xl
               font-bold
               leading-tight
+              tracking-tight
               text-white
               sm:text-4xl
               md:text-5xl
+              lg:text-6xl
             "
           >
             Let's Start a{" "}
@@ -141,16 +186,21 @@ const ContactInfo = () => {
             </span>
           </h2>
 
+          {/* Description */}
+
           <p
             className="
               mx-auto
               mt-5
+              w-full
               max-w-2xl
+              text-center
               text-sm
               leading-7
               text-slate-400
               sm:text-base
               sm:leading-8
+              lg:text-lg
             "
           >
             Whether you have a new project idea or need help with an
@@ -158,11 +208,14 @@ const ContactInfo = () => {
           </p>
         </motion.div>
 
-        {/* ================= CONTACT CARDS ================= */}
+        {/* =====================================================
+            CONTACT CARDS
+        ====================================================== */}
 
         <div
           className="
             grid
+            w-full
             grid-cols-1
             gap-5
             sm:grid-cols-2
@@ -188,9 +241,11 @@ const ContactInfo = () => {
                 className="
                   group
                   flex
+                  min-h-[180px]
                   w-full
                   flex-col
                   items-center
+                  justify-start
                   rounded-2xl
                   border
                   border-white/10
@@ -204,6 +259,7 @@ const ContactInfo = () => {
                   hover:bg-white/[0.06]
                   sm:p-7
                 "
+                style={{ padding: "10px" }}
               >
                 {/* Icon */}
 
@@ -212,6 +268,7 @@ const ContactInfo = () => {
                     flex
                     h-14
                     w-14
+                    shrink-0
                     items-center
                     justify-center
                     rounded-full
@@ -231,6 +288,8 @@ const ContactInfo = () => {
                 <h3
                   className="
                     mt-5
+                    w-full
+                    text-center
                     text-lg
                     font-semibold
                     text-white
@@ -245,7 +304,9 @@ const ContactInfo = () => {
                 <p
                   className="
                     mt-3
+                    w-full
                     break-words
+                    text-center
                     text-sm
                     font-medium
                     text-cyan-400
@@ -260,6 +321,8 @@ const ContactInfo = () => {
                 <p
                   className="
                     mt-2
+                    w-full
+                    text-center
                     text-sm
                     leading-6
                     text-slate-400
@@ -272,10 +335,12 @@ const ContactInfo = () => {
 
                 <span
                   className="
-                    mt-5
+                    mt-auto
                     flex
                     items-center
+                    justify-center
                     gap-2
+                    pt-5
                     text-xs
                     font-medium
                     text-slate-500
@@ -285,6 +350,7 @@ const ContactInfo = () => {
                   "
                 >
                   Contact us
+
                   <FaArrowRight
                     className="
                       transition-transform
@@ -297,7 +363,6 @@ const ContactInfo = () => {
             );
           })}
         </div>
-
       </div>
     </section>
   );

@@ -72,12 +72,12 @@ const NavBar = () => {
         <li className="">
           <NavLink to="/services">Services</NavLink>
         </li>
-        <li className="">
+        {/*<li className="">
           <NavLink to="/tech">Tech</NavLink>
         </li>
         <li className="">
           <NavLink to="/blog">Blog</NavLink>
-        </li>
+        </li>*/}
         <li className="">
           <NavLink to="/contact">Contact</NavLink>
         </li>

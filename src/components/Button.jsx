@@ -32,7 +32,7 @@ export default function Button({ Content, width = 170, href = "#ContactForm" }) 
         style={{
           ...containerStyle,
           width,
-          backgroundColor: isHovered ? "#e8571e" : "#ffffff",
+          backgroundColor: isHovered ? "#BF9F00" : "#ffffff",
           color: isHovered ? "#ffffff" : "#000000",
           flexDirection: isHovered ? "row-reverse" : "row",
         }}
@@ -58,12 +58,20 @@ export default function Button({ Content, width = 170, href = "#ContactForm" }) 
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
           style={{
             ...handleStyle,
-            backgroundColor: isHovered ? "#ffffff" : "#e8571e",
-            color: isHovered ? "#e8571e" : "#ffffff",
+            backgroundColor: isHovered ? "#ffffff" : "#BF9F00",
+            color: isHovered ? "#BF9F00" : "#ffffff",
           }}
         >
           <span className="material-symbols-rounded">
-            {isHovered ? "arrow_outward" : "arrow_right_alt"}
+            {isHovered ? (
+  <span className="material-symbols-rounded">
+    
+  </span>
+) : (
+  <span className="material-symbols-outlined">
+    
+  </span>
+)}
           </span>
         </motion.div>
       </button>

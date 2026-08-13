@@ -20,6 +20,7 @@ const ContactHero = () => {
         lg:px-8
         lg:py-28
       "
+      style={{ padding: "10px" }}
     >
       {/* ================= BACKGROUND GLOW ================= */}
 
@@ -40,6 +41,7 @@ const ContactHero = () => {
           lg:h-96
           lg:w-96
         "
+        style={{ padding: "10px" }}
       />
 
       <div
@@ -98,6 +100,7 @@ const ContactHero = () => {
             sm:px-5
             sm:text-sm
           "
+          style={{ padding: "10px" }}
         >
           Let's Connect
         </motion.span>
@@ -185,6 +188,7 @@ const ContactHero = () => {
             sm:py-4
             sm:text-base
           "
+            style={{ padding: "10px" }}
         >
           Start a Conversation
 
