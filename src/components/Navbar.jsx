@@ -120,7 +120,7 @@ const NavBar = () => {
           </NavLink>
         </li>
         <Divider className="" />
-        <li className="">
+        {/*<li className="">
           <NavLink
             to="/tech"
             onClick={() => {
@@ -141,7 +141,7 @@ const NavBar = () => {
             Blog
           </NavLink>
         </li>
-        <Divider className="" />
+        <Divider className="" />*/}
         <li className="">
           <NavLink
             to="/contact"
